@@ -523,6 +523,34 @@ a.menu-liitem {
 }
 
 
+.menu .menu-item, .contact-header .menu-item, li.active .menu-item {
+    margin: 0px 23px;
+    display: block;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+a.menu-item:focus, a.menu-item:hover,
+li.active a {
+    text-decoration: underline solid #2196F3;
+    text-underline-offset: 35px;
+    text-decoration-thickness: 4px;
+}
+
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    width: 58px;
+    height: 4px;
+    bottom: 32px;
+    top: 78px;
+    border-radius: 2px;
+    display: block;
+}
 
 a.menu-item:focus,
 a.menu-item:hover {
